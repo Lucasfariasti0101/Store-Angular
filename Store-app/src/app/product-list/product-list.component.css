@@ -1,0 +1,37 @@
+h2 {
+  font-size: 2.5em;
+  margin: 10px 0px 12px 15px;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+
+}
+
+mat-card-subtitle {
+  font-size: 1.1em;
+  color: rgb(245, 245, 245);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+}
+
+button {
+  margin-left: 15px;
+  padding: 1px 20px;
+  background-color: #541690;
+}
+
+
+mat-card {
+  background-color: #FF4949;
+  flex-basis: 25%;
+  margin: 10px 10px 10px 10px ;
+  padding: 10px;
+  width: 250px;
+}

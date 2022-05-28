@@ -1,0 +1,17 @@
+<h2>Products</h2>
+
+<div class="row">
+  <mat-card *ngFor="let product of products">
+    <mat-card-title>
+      <a [title]="product.name + ' details'">
+        {{ product.name }}
+      </a>
+    </mat-card-title>
+    <mat-card-subtitle *ngIf="product.description">
+      Description: {{ product.description }}
+    </mat-card-subtitle>
+    <mat-card-actions>
+      <button mat-raised-button (click)="share()">Share <mat-icon>share</mat-icon> </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

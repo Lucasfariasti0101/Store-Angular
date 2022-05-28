@@ -10,9 +10,14 @@ a {
 
 }
 
+mat-card-title {
+  margin: 5px 0px 5px 10px;
+}
+
 mat-card-subtitle {
   font-size: 1.1em;
   color: rgb(245, 245, 245);
+  margin: 10px 0px 20px 5px;
 }
 
 .row {
@@ -21,17 +26,34 @@ mat-card-subtitle {
   justify-content:left;
 }
 
-button {
-  margin-left: 15px;
-  padding: 1px 20px;
-  background-color: #541690;
-}
-
-
 mat-card {
   background-color: #FF4949;
   flex-basis: 25%;
   margin: 10px 10px 10px 10px ;
-  padding: 10px;
   width: 250px;
+}
+
+.content {
+  display: inline-block;
+  height: 150px;
+}
+
+mat-card-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+button {
+  background-color: #541690;
+  width: 110px;
+
+}
+
+.line {
+  width: 300px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }

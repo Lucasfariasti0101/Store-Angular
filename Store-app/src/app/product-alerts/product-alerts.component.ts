@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
+import { Product } from '../products';
 
 @Component({
   selector: 'app-product-alerts',
   templateUrl: './product-alerts.component.html',
   styleUrls: ['./product-alerts.component.css']
 })
-export class ProductAlertsComponent implements OnInit {
+export class ProductAlertsComponent {
+
+  @Input() product!: Product;
+  @Output() notify = new EventEmitter();
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

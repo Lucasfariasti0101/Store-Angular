@@ -1,3 +1,8 @@
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
 .container {
   display: inline-block;
   width: 40%;
@@ -6,8 +11,10 @@
 }
 
 h3 {
-  font-size: 2.2em;
-  font-weight: 600;
+  font-size: 2.8em;
+  margin: 30px 0px 20px 15px;
+  font-family: 'Bebas Neue', 'cursive';
+  font-weight: 400;
 }
 
 a {
@@ -17,7 +24,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 3px 3px 7px rgba(150, 150, 150, 1);
+  text-shadow: 3px 3px 7px #ff4949ce;
 }
 
 .content {
@@ -44,4 +51,56 @@ a:hover {
   font-size: 1.5em;
   font-weight: 500;
   color: #5aaa50;
+}
+
+.form {
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+}
+
+h4 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.in-name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.in-address {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.in-name input[type=text] {
+  width: 90%;
+  height: 30px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #33333375;
+  background: #f8f8f8;
+  border: 1px solid #00000085;
+}
+
+.in-address input[type=text] {
+  width: 90%;
+  height: 30px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #33333375;
+  background: #f8f8f8;
+  border: 1px solid #00000085;
+}
+
+.in-address input[type=text]:hover,
+.in-name input[type=text]:hover {
+    background: #ffffff;
+    border: 1px solid #FF4949;
+}
+
+button {
+  background-color: #FF4949;
 }

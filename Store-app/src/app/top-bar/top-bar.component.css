@@ -1,14 +1,26 @@
 mat-toolbar {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #333333;
 }
 
 span {
   text-decoration: none;
+  font-family: 'Bebas Neue', 'cursive';
+}
+
+span:hover {
+  text-shadow: 3px 3px 7px #ff4949ce;
 }
 
 a {
   text-decoration: none;
   color: white;
   font-size: 2em;
+}
+
+button {
+  font-family: 'Bebas Neue', 'cursive';
+  width: 120px;
 }

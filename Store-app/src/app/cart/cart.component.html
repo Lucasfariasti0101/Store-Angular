@@ -1,12 +1,29 @@
-<div class="container">
-  <h3>Cart</h3>
-  <p>
-    <a routerLink="/shipping">Shipping Prices</a>
-  </p>
-  <div class="content">
-    <div class="cart-item" *ngFor="let item of items">
-      <span class="item-name">{{ item.name }}</span>
-      <span class="item-price">{{ item.price | currency }}</span>
+<div class="row">
+  <div class="container">
+    <h3>Cart</h3>
+    <p>
+      <a routerLink="/shipping">Shipping Prices</a>
+    </p>
+    <div class="content">
+      <div class="cart-item" *ngFor="let item of items">
+        <span class="item-name">{{ item.name }}</span>
+        <span class="item-price">{{ item.price | currency }}</span>
+      </div>
     </div>
   </div>
+  <form class="form" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <h4>Data to make the purchase</h4>
+    <div class="in-name">
+      <label for="name"> Name </label>
+      <input id="name" type="text" formControlName="name" />
+    </div>
+
+    <div class="in-address">
+      <label for="address"> Address </label>
+      <input id="address" type="text" formControlName="address" />
+    </div>
+    <button mat-raised-button type="submit">
+      Purchase <mat-icon>done</mat-icon>
+    </button>
+  </form>
 </div>

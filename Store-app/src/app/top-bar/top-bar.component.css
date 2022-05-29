@@ -2,3 +2,13 @@ mat-toolbar {
   justify-content: space-between;
   background-color: #333333;
 }
+
+span {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}

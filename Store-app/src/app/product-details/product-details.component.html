@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card">
+    <div *ngIf="product">
+      <h2>Product Details</h2>
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <h4>{{ product.price | currency }}</h4>
+      <button mat-raised-button (click)="addToCart(product)"><mat-icon>shopping_cart</mat-icon> Buy</button>
+    </div>
+  </div>
+</div>

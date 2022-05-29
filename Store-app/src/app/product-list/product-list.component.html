@@ -1,14 +1,15 @@
 <h2>Products</h2>
 
 <div class="row">
-  <mat-card *ngFor="let product of products">
+  <mat-card *ngFor="let product of products" class="mat-elevation-z9">
     <div class="content">
       <mat-card-title>
-        <a [title]="product.name + ' details'">
+        <a [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]">
           {{ product.name }}
         </a>
       </mat-card-title>
-      <div class="line"> </div>
+      <div class="line"></div>
       <mat-card-subtitle *ngIf="product.description">
         Description: {{ product.description }}
       </mat-card-subtitle>
